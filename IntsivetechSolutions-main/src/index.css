@@ -1,0 +1,109 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 235 56% 17%;
+    --foreground: 0 0% 100%;
+
+    --card: 0 0% 7%;
+    --card-foreground: 0 0% 100%;
+
+    --popover: 0 0% 7%;
+    --popover-foreground: 0 0% 100%;
+
+    --primary: 189 100% 50%;
+    --primary-foreground: 0 0% 0%;
+
+    --secondary: 235 56% 12%;
+    --secondary-foreground: 0 0% 100%;
+
+    --muted: 235 30% 25%;
+    --muted-foreground: 0 0% 70%;
+
+    --accent: 189 100% 50%;
+    --accent-foreground: 0 0% 0%;
+
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 0 0% 100%;
+
+    --border: 235 30% 25%;
+    --input: 235 30% 25%;
+    --ring: 189 100% 50%;
+
+    --radius: 0.625rem;
+
+    --header-bg: 0 0% 7%;
+  }
+
+  .dark {
+    --background: 235 56% 17%;
+    --foreground: 0 0% 100%;
+    --card: 0 0% 7%;
+    --card-foreground: 0 0% 100%;
+    --popover: 0 0% 7%;
+    --popover-foreground: 0 0% 100%;
+    --primary: 189 100% 50%;
+    --primary-foreground: 0 0% 0%;
+    --secondary: 235 56% 12%;
+    --secondary-foreground: 0 0% 100%;
+    --muted: 235 30% 25%;
+    --muted-foreground: 0 0% 70%;
+    --accent: 189 100% 50%;
+    --accent-foreground: 0 0% 0%;
+    --destructive: 0 62% 31%;
+    --destructive-foreground: 0 0% 100%;
+    --border: 235 30% 25%;
+    --input: 235 30% 25%;
+    --ring: 189 100% 50%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    @apply bg-background text-foreground font-sans antialiased;
+    font-family: 'Roboto', sans-serif;
+  }
+}
+
+@layer utilities {
+  .text-gradient {
+    @apply bg-gradient-to-r from-primary to-cyan-300 bg-clip-text text-transparent;
+  }
+}
+
+/* Carousel animation */
+@keyframes carousel-fade {
+  0% { opacity: 0; }
+  8% { opacity: 1; }
+  33% { opacity: 1; }
+  41% { opacity: 0; }
+  100% { opacity: 0; }
+}
+
+.carousel-image {
+  animation: carousel-fade 12s infinite;
+}
+
+.carousel-image:nth-child(1) {
+  animation-delay: 0s;
+}
+
+.carousel-image:nth-child(2) {
+  animation-delay: 4s;
+}
+
+.carousel-image:nth-child(3) {
+  animation-delay: 8s;
+}
