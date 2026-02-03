@@ -60,7 +60,7 @@ const Footer = () => {
                 <Github size={20} />
               </a>
               <a
-                href="mailto:wisetech4you@gmail.com"
+                href="mailto:intrusivetechsolutions@gmail.com"
                 className="w-10 h-10 rounded-full bg-muted flex items-center justify-center text-muted-foreground hover:bg-primary hover:text-primary-foreground transition-all"
                 aria-label="Email"
               >
