@@ -31,9 +31,9 @@ const Footer = () => {
           {/* Quick Links */}
           <div className="text-center">
             <h4 className="font-bold text-foreground mb-4">Quick Links</h4>
-            <div className="flex flex-col gap-2">
+            <div className="flex flex-wrap items-center justify-center gap-4">
               <a href="/#home" className="text-muted-foreground hover:text-primary transition-colors text-sm">Home</a>
-              <a href="/#about" className="text-muted-foreground hover:text-primary transition-colors text-sm">About Us</a>
+              <a href="/about" className="text-muted-foreground hover:text-primary transition-colors text-sm">About Us</a>
               <a href="/#services" className="text-muted-foreground hover:text-primary transition-colors text-sm">Services</a>
               <Link to="/products" className="text-muted-foreground hover:text-primary transition-colors text-sm">Products</Link>
             </div>

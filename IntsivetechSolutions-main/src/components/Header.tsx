@@ -12,7 +12,7 @@ const Header = () => {
     { href: isHomePage ? "#services" : "/#services", label: "Services" },
     { href: "/products", label: "Products", isRoute: true },
     { href: isHomePage ? "#contact" : "/#contact", label: "Contact" },
-    { href: isHomePage ? "#about" : "/#about", label: "About Us" },
+    { href: "/about", label: "About Us", isRoute: true },
   ];
 
   return (

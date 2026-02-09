@@ -57,15 +57,15 @@ const Hero = () => {
             {/* Stats */}
             <div className="flex flex-wrap gap-8 mt-10 justify-center lg:justify-start">
               <div className="text-center">
-                <div className="text-2xl md:text-3xl font-bold text-primary">50+</div>
+                <div className="text-2xl md:text-3xl font-bold text-primary">5+</div>
                 <div className="text-sm text-muted-foreground">Projects Delivered</div>
               </div>
               <div className="text-center">
-                <div className="text-2xl md:text-3xl font-bold text-primary">30+</div>
+                <div className="text-2xl md:text-3xl font-bold text-primary">3+</div>
                 <div className="text-sm text-muted-foreground">Happy Clients</div>
               </div>
               <div className="text-center">
-                <div className="text-2xl md:text-3xl font-bold text-primary">5+</div>
+                <div className="text-2xl md:text-3xl font-bold text-primary">3+</div>
                 <div className="text-sm text-muted-foreground">Years Experience</div>
               </div>
             </div>
